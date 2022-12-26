@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>jQuery 모바일 웹 앱3 - 그룹핑 목록</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+    .page_tit { font-size:5vw; clear:both; padding-bottom: 2rem; }
+    .ui-header .ui-title { text-align:right; }
+    </style>
+</head>
+<body class="ui-mobile-viewport ui-overlay-b">
+<div id="page0" data-role="page" class="ui-page ui-page-theme-a ui-page-active">
+    <header class="ui-header" data-role="header" data-theme="b">
+        <h2 class="ui-title">여기는 헤더</h2>
+        <nav data-role="navbar" data-grid="d" role="navigation" class="nav-glyphish-example ui-navbar">
+            <ul class="ui-grid-d">
+                <li class="ui-block-a">
+                    <a href="#page1" data-icon="comment" data-theme="a" class="ui-btn ui-btn-icon-top ui-btn-up-a">
+                        <span class="ui-btn-text">Chat</span>
+                        <span class="ui-icon ui-icon-comment ui-icon-shadow"></span>
+                    </a>
+                </li>
+                <li class="ui-block-b">
+                    <a href="" data-icon="mail" data-theme="a" class="ui-btn ui-btn-icon-top ui-btn-up-a">
+                        <span class="ui-btn-text">Mail</span>
+                        <span class="ui-icon ui-icon-mail ui-icon-shadow"></span>
+                    </a>
+                </li>
+                <li class="ui-block-c">
+                    <a href="" data-icon="alert" data-theme="a" class="ui-btn ui-btn-icon-top ui-btn-up-a">
+                        <span class="ui-btn-text">Notice</span>
+                        <span class="ui-icon ui-icon-alert ui-icon-shadow"></span>
+                    </a>
+                </li>
+                <li class="ui-block-d">
+                    <a href="" data-icon="camera" data-theme="a" class="ui-btn ui-btn-icon-top ui-btn-up-a">
+                        <span class="ui-btn-text">Camera</span>
+                        <span class="ui-icon ui-icon-camera ui-icon-shadow"></span>
+                    </a>
+                </li>
+                <li class="ui-block-e">
+                    <a href="" data-icon="clock" data-theme="a" class="ui-btn ui-btn-icon-top ui-btn-up-a">
+                        <span class="ui-btn-text">Clock</span>
+                        <span class="ui-icon ui-icon-clock ui-icon-shadow"></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="ui-content" data-role="content">
+        <h1 class="ui-title">비순서형 그룹핑 목록</h1>
+        <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-inset="true" data-role="listview">
+            <li class="ui-li-static ui-body-inherit ui-first-child">
+                <span>Acura</span>
+            </li>
+            <li class="ui-li-static ui-body-inherit"><span>Audi</span></li>
+            <li class="ui-li-static ui-body-inherit"><a href="#page2" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">BMW</a></li>
+            <li class="ui-li-static ui-body-inherit"><span>Cadillac</span></li>
+            <li class="ui-li-static ui-body-inherit ui-last-child"><span>Ferrari</span></li>
+        </ul>
+    </div>
+    <footer class="ui-footer"data-role="footer" data-position="fixed">
+        <h2 class="ui-title">여기는 푸터</h2>
+    </footer>
+</div>
+<div id="page1" data-role="page" class="ui-page ui-page-theme-a">
+    <header data-role="header" class="ui-header" data-theme="b">
+        <a href="#page0" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-left" data-role="button" role="button">Back To Page</a>
+        <h1 class="ui-title" role="heading">sub Page</h1>
+    </header>
+    <div class="ui-content" data-role="content">
+        <h1 class="ui-title">순서형 그룹핑 목록</h1>
+        <ol class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-inset="true" data-role="listview">
+            <li class="ui-li-static ui-body-inherit ui-first-child">
+                <span>Acura</span>
+            </li>
+            <li class="ui-li-static ui-body-inherit"><span>Audi</span></li>
+            <li>
+                <a href="#page2" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">BMW</a>
+            </li>
+            <li class="ui-li-static ui-body-inherit"><span>Cadillac</span></li>
+            <li class="ui-li-static ui-body-inherit ui-last-child"><span>Ferrari</span></li>
+        </ol>
+    </div>
+    <footer data-role="footer" class="ui-footer" data-theme="b" data-position="fixed">
+        <h3>여기는 푸터입니다.</h3>
+    </footer>
+</div>
+<div id="page2" data-role="page" class="ui-page ui-page-theme-a">
+    <header data-role="header" class="ui-header" data-theme="b">
+        <a href="#page1" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-left" data-role="button" role="button">Back To Page</a>
+        <h1 class="ui-title" role="heading">sub Page2</h1>
+    </header>
+    <div class="ui-content" data-role="content">
+        <h1 class="ui-title">링크바 그룹핑 목록</h1>
+        <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-inset="true" data-role="listview">
+            <li class="ui-first-child">
+                <a href="#page0" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Acura</a>
+            </li>
+            <li>
+                <a href="#page1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Audi</a>
+            </li>
+            <li>
+                <a href="#page3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Cadillac</a>
+            </li>
+            <li class="ui-last-child">
+                <a href="#page4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Ferrari</a>
+            </li>
+        </ul>
+    </div>
+    <footer data-role="footer" class="ui-footer" data-theme="b" data-position="fixed">
+        <h3>여기는 푸터입니다.</h3>
+    </footer>
+</div>
+<div id="page3" data-role="page" class="ui-page ui-page-theme-a">
+    <header data-role="header" class="ui-header" data-theme="b">
+        <a href="#page2" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-left" data-role="button" role="button">Back To Page</a>
+        <h1 class="ui-title" role="heading">sub Page3</h1>
+    </header>
+    <div data-role="content" role="sub" class="ui-content">
+        <p>여기는 서브 콘텐츠3 입니다.</p>
+        <ul class="ui-list" data-role="listview">
+            <li><a href="#page1" data-transition="fade">Acura</a></li>
+            <li><a href="#page2" data-transition="pop">Audi</a></li>
+            <li><a href="#page3" data-transition="flip">BMW</a></li>
+            <li><a href="#page4" data-transition="turn">Cadillac</a></li>
+            <li><a href="#page1" data-transition="flow">Ferrari</a></li>
+        </ul>
+    </div>
+    <footer data-role="footer" class="ui-footer" data-theme="b" data-position="fixed">
+        <h3>여기는 푸터입니다.</h3>
+    </footer>
+</div>
+<div id="page4" data-role="page" class="ui-page ui-page-theme-a">
+    <header data-role="header" class="ui-header" data-theme="b">
+        <a href="#page3" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-left" data-role="button" role="button">Back To Page</a>
+        <h1 class="ui-title" role="heading">sub Page4</h1>
+    </header>
+    <div data-role="content" role="sub" class="ui-content">
+        <p>여기는 서브 콘텐츠4 입니다.</p>
+        <a href="#page0" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">메인</a>
+        <a href="#page1" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">페이지1</a>
+        <a href="#page2" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">페이지2</a>
+        <a href="#page3" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">페이지3</a>
+    </div>
+    <footer data-role="footer" class="ui-footer" data-theme="b" data-position="fixed">
+        <h3>여기는 푸터입니다.</h3>
+    </footer>
+</div>
+</body>
+</html>

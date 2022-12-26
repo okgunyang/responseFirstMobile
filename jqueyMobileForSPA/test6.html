@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>jQuery 모바일 웹 앱6 - 검색 목록, 리스트 구분자와 그룹 분리</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+    .page_tit { font-size:5vw; clear:both; padding-bottom: 2rem; }
+    .ui-header .ui-title { text-align:right; }
+    .ui-icon-custom1:after { background-image:url("../car2.png");
+    background-position: center center;
+    background-size:95%;}
+    </style>
+</head>
+<body class="ui-mobile-viewport ui-overlay-b">
+<div id="page0" data-role="page" class="ui-page ui-page-theme-a ui-page-active">
+    <header class="ui-header" data-role="header" data-theme="b">
+        <h2 class="ui-title">여기는 헤더</h2>
+        <nav data-role="navbar" data-grid="d" role="navigation" class="nav-glyphish-example ui-navbar">
+            <ul class="ui-grid-d">
+                <li class="ui-block-a">
+                    <a href="#page1" data-icon="comment" data-theme="a" class="ui-btn ui-btn-icon-top ui-btn-up-a">
+                        <span class="ui-btn-text">Chat</span>
+                        <span class="ui-icon ui-icon-comment ui-icon-shadow"></span>
+                    </a>
+                </li>
+                <li class="ui-block-b">
+                    <a href="" data-icon="mail" data-theme="a" class="ui-btn ui-btn-icon-top ui-btn-up-a">
+                        <span class="ui-btn-text">Mail</span>
+                        <span class="ui-icon ui-icon-mail ui-icon-shadow"></span>
+                    </a>
+                </li>
+                <li class="ui-block-c">
+                    <a href="" data-icon="alert" data-theme="a" class="ui-btn ui-btn-icon-top ui-btn-up-a">
+                        <span class="ui-btn-text">Notice</span>
+                        <span class="ui-icon ui-icon-alert ui-icon-shadow"></span>
+                    </a>
+                </li>
+                <li class="ui-block-d">
+                    <a href="" data-icon="camera" data-theme="a" class="ui-btn ui-btn-icon-top ui-btn-up-a">
+                        <span class="ui-btn-text">Camera</span>
+                        <span class="ui-icon ui-icon-camera ui-icon-shadow"></span>
+                    </a>
+                </li>
+                <li class="ui-block-e">
+                    <a href="" data-icon="clock" data-theme="a" class="ui-btn ui-btn-icon-top ui-btn-up-a">
+                        <span class="ui-btn-text">Clock</span>
+                        <span class="ui-icon ui-icon-clock ui-icon-shadow"></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="ui-content" data-role="content">
+        <h1 class="ui-title">검색 목록</h1>
+        <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-inset="true" data-role="listview" data-filter="true" data-filter-placeholder="Search Station...">
+            <li class="ui-first-child">
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">대화</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">주엽</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">정발산</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">마두</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">백석</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">대곡</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">화정</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">원당</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">원흥</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">삼송</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">지축</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">구파발</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">연신내</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">불광</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">녹번</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">홍제</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">무악재</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">독립문</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">경복궁</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">안국</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">종로3가</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">을지로3가</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">충무로</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">동대입구</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">약수</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">금호</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">옥수</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">압구정</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">신사</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">잠원</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">고속터미널</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">교대</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">남부터미널</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">양재</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">매봉</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">도곡</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">대치</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">학여울</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">대청</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">일원</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">수서</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">가락시장</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">경찰병원</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">오금</a>
+            </li>
+        </ul>
+    </div>
+    <footer class="ui-footer"data-role="footer" data-position="fixed">
+        <h2 class="ui-title">여기는 푸터</h2>
+    </footer>
+</div>
+<div id="page1" data-role="page" class="ui-page ui-page-theme-a">
+    <header data-role="header" class="ui-header" data-theme="b">
+        <a href="#page0" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-left" data-role="button" role="button">Back To Page</a>
+        <h1 class="ui-title" role="heading">sub Page</h1>
+    </header>
+    <div class="ui-content" data-role="content">
+        <h1 class="ui-title">리스트 구분자와 그룹 분리</h1>
+        <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-inset="true" data-role="listview">
+            <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-a ui-first-child">Mail</li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Inbox</a>
+            </li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Outbox</a>
+            </li>
+            <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-a">Contacts</li>
+            <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Friends</a>
+            </li>
+            <li class="ui-last-child">
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Work</a>
+            </li>
+        </ul>
+        <div class="ui-btn-group">
+            <a href="#page0" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-direction="reverse">첫 페이지로</a>
+        </div>
+    </div>
+    <footer data-role="footer" class="ui-footer" data-theme="b" data-position="fixed">
+        <h3>여기는 푸터입니다.</h3>
+    </footer>
+</div>
+<div id="page2" data-role="page" class="ui-page ui-page-theme-a">
+    <header data-role="header" class="ui-header" data-theme="b">
+        <a href="#page1" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-left" data-role="button" role="button">Back To Page</a>
+        <h1 class="ui-title" role="heading">sub Page2</h1>
+    </header>
+    <div class="ui-content" data-role="content">
+        <h1 class="ui-title">썸네일 목록</h1>
+        <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-inset="true" data-role="listview">
+            <li class="ui-li-has-thumb ui-first-child">
+                <a href="#page1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                    <img src="../album-bb.jpg">
+                    <h2>Broken Bells</h2>
+                    <p>Broken Bells</p>
+                </a>
+            </li>
+            <li class="ui-li-has-thumb">
+                <a href="#page3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                    <img src="../album-hc.jpg">
+                    <h2>Warning</h2>
+                    <p>Hot Chip</p>
+                </a>
+            </li>
+            <li class="ui-li-has-thumb ui-last-child">
+                <a href="#page4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                    <img src="../album-p.jpg">
+                    <h2>Wolfgang Amadeus Phoenix</h2>
+                    <p>Phoenix</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <footer data-role="footer" class="ui-footer" data-theme="b" data-position="fixed">
+        <h3>여기는 푸터입니다.</h3>
+    </footer>
+</div>
+<div id="page3" data-role="page" class="ui-page ui-page-theme-a">
+    <header data-role="header" class="ui-header" data-theme="b">
+        <a href="#page2" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-left" data-role="button" role="button">Back To Page</a>
+        <h1 class="ui-title" role="heading">검색 목록</h1>
+    </header>
+    <div data-role="content" role="sub" class="ui-content">
+        <p>여기는 서브 콘텐츠3 입니다.</p>
+        <ul class="ui-list" data-role="listview">
+            <li><a href="#page1" data-transition="fade">Acura</a></li>
+            <li><a href="#page2" data-transition="pop">Audi</a></li>
+            <li><a href="#page3" data-transition="flip">BMW</a></li>
+            <li><a href="#page4" data-transition="turn">Cadillac</a></li>
+            <li><a href="#page1" data-transition="flow">Ferrari</a></li>
+        </ul>
+    </div>
+    <footer data-role="footer" class="ui-footer" data-theme="b" data-position="fixed">
+        <h3>여기는 푸터입니다.</h3>
+    </footer>
+</div>
+<div id="page4" data-role="page" class="ui-page ui-page-theme-a">
+    <header data-role="header" class="ui-header" data-theme="b">
+        <a href="#page3" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-left" data-role="button" role="button">Back To Page</a>
+        <h1 class="ui-title" role="heading">sub Page4</h1>
+    </header>
+    <div data-role="content" role="sub" class="ui-content">
+        <p>여기는 서브 콘텐츠4 입니다.</p>
+        <a href="#page0" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">메인</a>
+        <a href="#page1" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">페이지1</a>
+        <a href="#page2" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">페이지2</a>
+        <a href="#page3" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">페이지3</a>
+    </div>
+    <footer data-role="footer" class="ui-footer" data-theme="b" data-position="fixed">
+        <h3>여기는 푸터입니다.</h3>
+    </footer>
+</div>
+</body>
+</html>

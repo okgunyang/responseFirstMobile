@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>jQuery 모바일 웹 앱14 - 그리드 구현</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+    .page_tit { font-size:5vw; clear:both; padding-bottom: 2rem; }
+    .ui-header .ui-title { text-align:right; }
+    .ui-icon-custom1:after { background-image:url("../car2.png");
+    background-position: center center;
+    background-size:95%;}
+    .ui-field-contain:after { content:""; clear:both; display:block; }
+    </style>
+</head>
+<body class="ui-mobile-viewport ui-overlay-b">
+<div id="page0" data-role="page" class="ui-page ui-page-theme-a ui-page-active">
+    <header class="ui-header" data-role="header" data-theme="b">
+        <h2 class="ui-title">여기는 헤더</h2>
+        <nav data-role="navbar" data-grid="d" role="navigation" class="nav-glyphish-example ui-navbar">
+            <ul class="ui-grid-d">
+                <li class="ui-block-a">
+                    <a href="#page1" data-icon="comment" data-theme="a" class="ui-btn ui-btn-icon-top ui-btn-up-a">
+                        <span class="ui-btn-text">Chat</span>
+                        <span class="ui-icon ui-icon-comment ui-icon-shadow"></span>
+                    </a>
+                </li>
+                <li class="ui-block-b">
+                    <a href="#page2" data-icon="mail" data-theme="a" class="ui-btn ui-btn-icon-top ui-btn-up-a">
+                        <span class="ui-btn-text">Mail</span>
+                        <span class="ui-icon ui-icon-mail ui-icon-shadow"></span>
+                    </a>
+                </li>
+                <li class="ui-block-c">
+                    <a href="#page3" data-icon="alert" data-theme="a" class="ui-btn ui-btn-icon-top ui-btn-up-a">
+                        <span class="ui-btn-text">Notice</span>
+                        <span class="ui-icon ui-icon-alert ui-icon-shadow"></span>
+                    </a>
+                </li>
+                <li class="ui-block-d">
+                    <a href="#page4" data-icon="camera" data-theme="a" class="ui-btn ui-btn-icon-top ui-btn-up-a">
+                        <span class="ui-btn-text">Camera</span>
+                        <span class="ui-icon ui-icon-camera ui-icon-shadow"></span>
+                    </a>
+                </li>
+                <li class="ui-block-e">
+                    <a href="" data-icon="clock" data-theme="a" class="ui-btn ui-btn-icon-top ui-btn-up-a">
+                        <span class="ui-btn-text">Clock</span>
+                        <span class="ui-icon ui-icon-clock ui-icon-shadow"></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div role="main" class="ui-content" data-role="content">
+        <div class="ui-container">
+            <h2 class="ui-title">한 줄 두 컬럼</h2>
+            <fieldset class="ui-grid-a">
+                <div class="ui-block-a"><button type="submit" data-theme="a">Cancel</button></div>
+                <div class="ui-block-b"><button type="submit" data-theme="b">Submit</button></div>
+            </fieldset>
+        </div>
+        <div class="ui-container">
+            <h2 class="ui-title">두 줄 두 컬럼과 합치기</h2>
+            <div class="ui-grid-a">
+                <div class="ui-block-a"><button type="button" data-theme="a">Previous</button></div>
+                <div class="ui-block-b"><button type="button" data-theme="a">Next</button></div>
+            </div>
+            <div class="ui-grid-solo">
+                <div class="ui-block-a"><button type="button" data-theme="b">More</button></div>
+            </div>
+        </div>
+        <div class="ui-container">
+            <h2 class="ui-title">두 줄 세 컬럼</h2>
+            <div class="ui-grid-b">
+                <div class="ui-block-a">Block A</div>
+                <div class="ui-block-b">Block B</div>
+                <div class="ui-block-c">Block C</div>
+                <div class="ui-block-a">Block A</div>
+                <div class="ui-block-b">Block B</div>
+                <div class="ui-block-c">Block C</div>
+            </div>
+        </div>
+        <div class="ui-container">
+            <h2 class="ui-title">두 줄 네 컬럼</h2>
+            <div class="ui-grid-c">
+                <div class="ui-block-a">Block A</div>
+                <div class="ui-block-b">Block B</div>
+                <div class="ui-block-c">Block C</div>
+                <div class="ui-block-d">Block D</div>
+                <div class="ui-block-a">Block A</div>
+                <div class="ui-block-b">Block B</div>
+                <div class="ui-block-c">Block C</div>
+                <div class="ui-block-d">Block D</div>
+            </div>
+        </div>
+        <div class="ui-container">
+            <h2 class="ui-title">두 줄 다섯 컬럼</h2>
+            <div class="ui-grid-d">
+                <div class="ui-block-a">Block A</div>
+                <div class="ui-block-b">Block B</div>
+                <div class="ui-block-c">Block C</div>
+                <div class="ui-block-d">Block D</div>
+                <div class="ui-block-e">Block E</div>
+                <div class="ui-block-a">Block A</div>
+                <div class="ui-block-b">Block B</div>
+                <div class="ui-block-c">Block C</div>
+                <div class="ui-block-d">Block D</div>
+                <div class="ui-block-e">Block E</div>
+            </div>
+        </div>
+    </div>
+    <footer class="ui-footer"data-role="footer" data-position="fixed">
+        <h2 class="ui-title">여기는 푸터</h2>
+    </footer>
+</div>
+</body>
+</html>

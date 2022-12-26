@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>jQuery 모바일 웹 앱8 - 버튼 장식, 아이콘 버튼, 아이콘 정렬</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+    .page_tit { font-size:5vw; clear:both; padding-bottom: 2rem; }
+    .ui-header .ui-title { text-align:right; }
+    .ui-icon-custom1:after { background-image:url("../car2.png");
+    background-position: center center;
+    background-size:95%;}
+    .ui-field-contain:after { content:""; clear:both; display:block; }
+    </style>
+</head>
+<body class="ui-mobile-viewport ui-overlay-b">
+<div id="page40" data-role="page" class="ui-page ui-page-theme-a ui-page-active">
+    <div class="ui-content" data-role="content">
+        <div data-role="container">
+            <h2 class="ui-title">외부 파일</h2>
+            <div data-demo-html="true">
+                외부 파일 데이터
+                <a href="test10.html" data-role="button" data-rel="back" data-theme="b" class="ui-button ui-shadow ui-corner-all ui-widget ui-button-b" role="button">메인으로</a>
+                <a href="#" data-role="button" data-rel="back" data-theme="a" class="ui-button ui-shadow ui-corner-all ui-widget ui-button-a" role="button">취소</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
