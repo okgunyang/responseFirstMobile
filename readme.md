@@ -24,34 +24,34 @@
 
 
 ## 프로토타입 제작 도구
-1. [Balsamiq](http://balsamiq.com){:target="_blank"}
-2. [FluidUI](http://fluidui.com){:target="_blank"}
-3. [GlooMaps](https://www.gloomaps.com){:target="_blank"}
-4. [Framer](https://www.framer.com){:target="_blank"}
-5. [Figma](https://www.figma.com){:target="_blank"}
-6. [Adobe XD](https://helpx.adobe.com/kr/xd/get-started.html){:target="_blank"}
-7. [Mockflow](https://www.mockflow.com){:target="_blank"}
-8. [OmniGraffle]( http://omnigroup.com/omnigraffle){:target="_blank"}
-9. [Oven](http://ovenapp.io){:target="_blank"}
-10. [UxPin](http://uxpin.com){:target="_blank"}
-11. [Axure](http://www.axure.com){:target="_blank"}
-11. [Sketch](https://www.sketch.com){:target="_blank"}
-11. [Invision](http://www.invisionapp.com){:target="_blank"}
-12. [Pixate](http://www.pixate.com){:target="_blank"}
-13. [FlowMapp](https://www.flowmapp.com){:target="_blank"}
-14. [Prototypr](https://prototypr.io){:target="_blank"}
-15. [EdrawMax](https://www.edrawsoft.com){:target="_blank"}
-16. [MockingBird](https://gomockingbird.com){:target="_blank"}
-17. [Pidoco](https://pidoco.com){:target="_blank"}
-18. [Mockup](https://mockup.io){:target="_blank"}
-19. [JustMind](https://www.justinmind.com){:target="_blank"}
-20. [Savahapp]https://www.savahapp.com){:target="_blank"}
-21. [Proto.io](https://proto.io){:target="_blank"}
-22. [Pixso](https://pixso.net){:target="_blank"}
-23. [ProtoPie](https://www.protopie.io){:target="_blank"}
-24. [Marvel](https://marvelapp.com){:target="_blank"}
-25. [Flinto](https://www.flinto.com){:target="_blank"}
-26. [Canva](https://www.canva.com/ko_kr/prototypes/){:target="_blank"}
+1. [Balsamiq](http://balsamiq.com)
+2. [FluidUI](http://fluidui.com)
+3. [GlooMaps](https://www.gloomaps.com)
+4. [Framer](https://www.framer.com)
+5. [Figma](https://www.figma.com)
+6. [Adobe XD](https://helpx.adobe.com/kr/xd/get-started.html)
+7. [Mockflow](https://www.mockflow.com)
+8. [OmniGraffle]( http://omnigroup.com/omnigraffle)
+9. [Oven](http://ovenapp.io)
+10. [UxPin](http://uxpin.com)
+11. [Axure](http://www.axure.com)
+11. [Sketch](https://www.sketch.com)
+11. [Invision](http://www.invisionapp.com)
+12. [Pixate](http://www.pixate.com)
+13. [FlowMapp](https://www.flowmapp.com)
+14. [Prototypr](https://prototypr.io)
+15. [EdrawMax](https://www.edrawsoft.com)
+16. [MockingBird](https://gomockingbird.com)
+17. [Pidoco](https://pidoco.com)
+18. [Mockup](https://mockup.io)
+19. [JustMind](https://www.justinmind.com)
+20. [Savahapp]https://www.savahapp.com)
+21. [Proto.io](https://proto.io)
+22. [Pixso](https://pixso.net)
+23. [ProtoPie](https://www.protopie.io)
+24. [Marvel](https://marvelapp.com)
+25. [Flinto](https://www.flinto.com)
+26. [Canva](https://www.canva.com/ko_kr/prototypes/)
 
 
 ## 모바일 운영체제별 앱의 비교
